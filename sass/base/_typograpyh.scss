@@ -1,0 +1,81 @@
+.heading-1 {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: $font-overpass;
+  color: $color-white;
+  margin-bottom: 2rem;
+
+  @media only screen and (min-width: $bp-mobile) {
+    font-size: 4.5rem;
+    font-weight: 600;
+  }
+}
+
+.heading-2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: $font-overpass;
+  color: $color-very-dark-blue;
+  text-align: center;
+
+  @media only screen and (min-width: $bp-mobile) {
+    font-size: 3.5rem;
+  }
+}
+
+.heading-3 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: $font-overpass;
+  color: $color-very-dark-blue;
+  text-align: center;
+  padding: 1rem 3rem;
+
+  @media only screen and (min-width: $bp-mobile) {
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 3rem 0;
+  }
+}
+
+.heading-4 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: $font-overpass;
+  color: $color-white;
+  text-align: center;
+  padding: 1rem 3rem;
+
+  @media only screen and (min-width: $bp-mobile) {
+    text-align: left;
+    padding: 3rem 0;
+  }
+}
+
+.paragraph-primary {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: $font-overpass;
+  color: $color-white;
+}
+
+.paragraph-secondary {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+  font-family: $font-overpass;
+  color: $color-very-dark-grayish-blue;
+}
+
+.paragraph-tertiary {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+  font-family: $font-overpass;
+  color: $color-white;
+  margin-bottom: 5rem;
+
+  @media only screen and (min-width: $bp-mobile) {
+    font-size: 2rem;
+  }
+}

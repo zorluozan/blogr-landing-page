@@ -1,0 +1,51 @@
+.btn {
+  font-size: $default-font-size;
+  font-weight: 600;
+  font-family: $font-ubuntu;
+  border: 1px solid $color-white;
+  border-radius: 10rem;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  text-align: center;
+
+  &--primary {
+    background-color: $color-white;
+    color: $color-light-red;
+    border: none;
+    margin-right: 1rem;
+
+    &:hover {
+      background-color: $color-very-light-red-3;
+      color: $color-white;
+    }
+  }
+
+  &--secondary {
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-light-red;
+    }
+  }
+
+  &--tertiary {
+    color: $color-white;
+    background: linear-gradient($color-very-light-red, $color-light-red);
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    border: none;
+
+    &:hover {
+      background-color: $color-very-light-red-3;
+      color: $color-white;
+      border: none;
+    }
+
+    @media only screen and (min-width: $bp-mobile) {
+      margin-top: 0;
+      background: $color-white;
+      color: $color-light-red;
+    }
+  }
+}

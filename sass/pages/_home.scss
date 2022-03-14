@@ -1,0 +1,126 @@
+.main {
+  margin-top: 10rem;
+
+  &__intro {
+    @media only screen and (min-width: $bp-mobile) {
+      display: flex;
+      align-items: center;
+    }
+    &__picture {
+      padding: 3rem 0;
+
+      @media only screen and (min-width: $bp-mobile) {
+        flex: 0 0 55%;
+      }
+      &--image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__articles {
+      text-align: center;
+      padding: 3rem;
+
+      @media only screen and (min-width: $bp-mobile) {
+        order: -1;
+        flex: 0 0 45%;
+        text-align: left;
+      }
+    }
+
+    &__article {
+      margin-bottom: 3rem;
+
+      @media only screen and (min-width: $bp-mobile) {
+        padding: 3rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__content {
+    background: url(../images/bg-pattern-circles.svg) no-repeat 50% -22rem,
+      linear-gradient(
+        90deg,
+        $color-very-dark-gray-blue,
+        $color-very-dark-desurated-blue
+      );
+    background-size: cover;
+    border-radius: 0 10rem 0 10rem;
+    position: relative;
+    margin-top: 15rem;
+
+    @media only screen and (min-width: $bp-mobile) {
+      background: url(../images/bg-pattern-circles.svg) no-repeat 0 -58rem,
+        linear-gradient(
+          90deg,
+          $color-very-dark-gray-blue,
+          $color-very-dark-desurated-blue
+        );
+    }
+
+    &--logo {
+      height: 30rem;
+      position: absolute;
+      top: -15rem;
+      left: 10%;
+
+      @media only screen and (min-width: $bp-mobile) {
+        height: 50rem;
+        position: absolute;
+        top: -3rem;
+        left: -3rem;
+      }
+    }
+
+    &__writing {
+      text-align: center;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      padding-top: 16rem;
+      padding-bottom: 6rem;
+
+      @media only screen and (min-width: $bp-mobile) {
+        text-align: left;
+        width: 60%;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__info {
+    padding: 5rem 3rem;
+
+    @media only screen and (min-width: $bp-mobile) {
+      display: flex;
+      align-items: center;
+      padding: 6rem 0;
+    }
+    &__header {
+      @media only screen and (min-width: $bp-mobile) {
+        flex: 0 0 50%;
+      }
+      &--logo {
+        width: 100%;
+        height: auto;
+        @media only screen and (min-width: $bp-mobile) {
+          transform: translateX(-17rem);
+        }
+      }
+    }
+
+    &__articles {
+      text-align: center;
+
+      @media only screen and (min-width: $bp-mobile) {
+        text-align: left;
+        flex: 0 0 40%;
+      }
+
+      &--article {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

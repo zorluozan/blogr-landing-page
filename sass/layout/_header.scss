@@ -1,0 +1,79 @@
+.header {
+  background: url(../images/bg-pattern-intro-mobile.svg) no-repeat 40%,
+    linear-gradient(90deg, $color-very-light-red, $color-light-red);
+  border-bottom-left-radius: 20%;
+  background-position: center;
+  padding-bottom: 12rem;
+
+  @media only screen and (min-width: $bp-mobile) {
+    background: url(../images/bg-pattern-intro-mobile.svg) no-repeat 40%,
+      linear-gradient(90deg, $color-very-light-red, $color-light-red);
+    border-bottom-left-radius: 10rem;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  &__nav {
+    padding: 3rem;
+
+    @media only screen and (min-width: $bp-mobile) {
+      display: flex;
+      align-items: center;
+    }
+
+    &--icon {
+      @media only screen and (min-width: $bp-mobile) {
+        display: none;
+      }
+    }
+
+    &__main {
+      background: $color-white;
+      position: absolute;
+      top: 3%;
+      left: 5%;
+      flex-direction: column;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      width: 90%;
+      box-shadow: 0 0.2rem 0.7rem 0.3rem rgba(0, 0, 0, 0.2);
+      display: none;
+
+      @media only screen and (min-width: $bp-mobile) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        box-shadow: none;
+        position: static;
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 4rem;
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+    padding: 3rem;
+  }
+
+  &__buttons {
+    padding: 1rem 3rem;
+    text-align: center;
+  }
+}
+
+.logo {
+  height: 3rem;
+}
+
+.show-menu {
+  display: block;
+}
