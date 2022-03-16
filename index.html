@@ -11,6 +11,8 @@
     href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <title>Blogr</title>
 
 </head>
@@ -28,14 +30,16 @@
       </div>
       <div class="header__nav__main">
         <div class="menu">
-          <label for="product" class="menu__collapse">
-            <input name="check" type="checkbox" id="product" value="Product">
+          <div class="menu__collapse js-menu-dropdown" id="product" data-target="product-menu">
             <h2 class="menu__title">
-              <a href="#" class="menu__title--link">Product</a>
-              <span class="menu__icons">
-                <img src="images/icon-arrow-light.svg" alt="Icon Arrow" class="icon--white">
-                <img src="images/icon-arrow-dark.svg" alt="Icon Arrow 2" class="icon--dark">
-              </span>
+              <a href="#" class="menu__title--link">
+                Product
+                <span class="menu__icons">
+                  <img src="images/icon-arrow-light.svg" alt="Icon Arrow" class="icon--white">
+                  <img src="images/icon-arrow-dark.svg" alt="Icon Arrow 2" class="icon--dark">
+                </span>
+              </a>
+
             </h2>
 
             <div class="menu__list">
@@ -45,16 +49,18 @@
               <div><a href="#" class="menu__list--link">Features</a></div>
               <div><a href="#" class="menu__list--link">Integrations</a></div>
             </div>
-          </label>
+          </div>
 
-          <label for="company" class="menu__collapse">
-            <input name="check" type="checkbox" id="company" value="Company">
+          <div class="menu__collapse js-menu-dropdown" id="company" data-target="company-menu">
             <h2 class="menu__title">
-              <a href="#" class="menu__title--link">Company</a>
-              <span class="menu__icons">
-                <img src="images/icon-arrow-light.svg" alt="Icon Arrow" class="icon--white">
-                <img src="images/icon-arrow-dark.svg" alt="Icon Arrow 2" class="icon--dark">
-              </span>
+              <a href="#" class="menu__title--link">
+                Company
+                <span class="menu__icons">
+                  <img src="images/icon-arrow-light.svg" alt="Icon Arrow" class="icon--white">
+                  <img src="images/icon-arrow-dark.svg" alt="Icon Arrow 2" class="icon--dark">
+                </span>
+              </a>
+
             </h2>
 
             <div class="menu__list">
@@ -63,16 +69,17 @@
               <div><a href="#" class="menu__list--link">Blog</a></div>
               <div><a href="#" class="menu__list--link">Careers</a></div>
             </div>
-          </label>
+          </div>
 
-          <label for="connect" class="menu__collapse">
-            <input name="check" type="checkbox" id="connect" value="Connect">
+          <div class="menu__collapse js-menu-dropdown" data-target="connect-menu" id="connect">
             <h2 class="menu__title">
-              <a href="#" class="menu__title--link">Connect</a>
-              <span class="menu__icons">
-                <img src="images/icon-arrow-light.svg" alt="Icon Arrow" class="icon--white">
-                <img src="images/icon-arrow-dark.svg" alt="Icon Arrow 2" class="icon--dark">
-              </span>
+              <a href="#" class="menu__title--link">
+                Connect
+                <span class="menu__icons">
+                  <img src="images/icon-arrow-light.svg" alt="Icon Arrow" class="icon--white">
+                  <img src="images/icon-arrow-dark.svg" alt="Icon Arrow 2" class="icon--dark">
+                </span>
+              </a>
             </h2>
 
             <div class="menu__list">
@@ -80,7 +87,7 @@
               <div><a href="#" class="menu__list--link">Newsletter</a></div>
               <div><a href="#" class="menu__list--link">LinkedIn</a></div>
             </div>
-          </label>
+          </div>
         </div>
 
         <div class="menu__cta">
@@ -106,7 +113,7 @@
 
   <main class="main">
     <p class="heading-2">Designed for the future</p>
-    <section class="main__intro">
+    <div class="main__intro">
       <div class="main__intro__picture">
         <picture>
           <source media="(min-width:48em)" srcset="images/illustration-editor-desktop.svg">
@@ -135,9 +142,9 @@
           </p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="main__content">
+    <div class="main__content">
       <img src="images/illustration-phones.svg" alt="Illustration Phones" class="main__content--logo">
 
       <div class="main__content__writing">
@@ -147,9 +154,9 @@
           This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
         </p>
       </div>
-    </section>
+    </div>
 
-    <section class="main__info">
+    <div class="main__info">
       <div class="main__info__header">
         <picture>
           <source media="(min-width:48em)" srcset="images/illustration-laptop-desktop.svg">
@@ -180,7 +187,7 @@
         </div>
 
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="footer">

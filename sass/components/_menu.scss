@@ -4,28 +4,11 @@
   }
 
   &__collapse {
-    display: block;
     text-align: center;
     margin: 1rem;
 
     @media only screen and (min-width: $bp-mobile) {
       margin: 0;
-    }
-
-    & input {
-      position: absolute;
-      left: -100rem;
-    }
-
-    & input:checked ~ .menu__list {
-      display: block;
-      height: auto;
-      padding: 1rem;
-      margin: 1rem auto;
-    }
-
-    & input:checked ~ .menu__title span {
-      transform: rotate(180deg);
     }
   }
 
@@ -42,6 +25,8 @@
     &--link {
       text-decoration: none;
       color: $color-very-dark-blue;
+      display: flex;
+      align-items: center;
 
       @media only screen and (min-width: $bp-mobile) {
         color: $color-white;
@@ -60,8 +45,6 @@
   &__list {
     display: none;
     position: relative;
-    height: 0;
-    width: 17rem;
     background: $color-grayish-blue-2;
     font-size: 1.5rem;
     border-radius: 5px;
@@ -69,7 +52,6 @@
     @media only screen and (min-width: $bp-mobile) {
       display: none;
       position: absolute;
-      height: 0;
       width: 13rem;
       background: $color-white;
       font-size: 1.2rem;
@@ -138,5 +120,16 @@
 
   @media only screen and (min-width: $bp-mobile) {
     display: none;
+  }
+}
+
+.js-menu-dropdown {
+  &:hover {
+    .menu__list {
+      display: block;
+    }
+    .menu__icons img {
+      transform: rotate(180deg);
+    }
   }
 }

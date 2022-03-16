@@ -10,3 +10,11 @@ link.addEventListener("click", function () {
     iconMenu.src = "images/icon-hamburger.svg";
   }
 });
+
+// Solution with jquery
+// $(link).click(function () {
+//   $(mobileMenu).toggleClass("show-menu");
+//   $(mobileMenu).hasClass("show-menu")
+//     ? $(iconMenu).attr("src", "images/icon-close.svg")
+//     : $(iconMenu).attr("src", "images/icon-hamburger.svg");
+// });

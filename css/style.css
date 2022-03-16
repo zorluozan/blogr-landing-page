@@ -17,7 +17,7 @@ body {
   font-size: 3rem;
   font-weight: 300;
   font-family: "Overpass", sans-serif;
-  color: white;
+  color: #ffffff;
   margin-bottom: 2rem; }
   @media only screen and (min-width: 48em) {
     .heading-1 {
@@ -51,7 +51,7 @@ body {
   font-size: 3rem;
   font-weight: 600;
   font-family: "Overpass", sans-serif;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 1rem 3rem; }
   @media only screen and (min-width: 48em) {
@@ -63,7 +63,7 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   font-family: "Overpass", sans-serif;
-  color: white; }
+  color: #ffffff; }
 
 .paragraph-secondary {
   font-size: 1.5rem;
@@ -77,7 +77,7 @@ body {
   font-weight: 300;
   line-height: 1.7;
   font-family: "Overpass", sans-serif;
-  color: white;
+  color: #ffffff;
   margin-bottom: 5rem; }
   @media only screen and (min-width: 48em) {
     .paragraph-tertiary {
@@ -87,38 +87,38 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   font-family: "Ubuntu", sans-serif;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   border-radius: 10rem;
   text-decoration: none;
   padding: 1rem 1rem;
   text-align: center; }
   .btn--primary {
-    background-color: white;
+    background-color: #ffffff;
     color: #ff3d54;
     border: none;
     margin-right: 1rem; }
     .btn--primary:hover {
       background-color: #ff7a85;
-      color: white; }
+      color: #ffffff; }
   .btn--secondary {
-    color: white; }
+    color: #ffffff; }
     .btn--secondary:hover {
-      background-color: white;
+      background-color: #ffffff;
       color: #ff3d54; }
   .btn--tertiary {
-    color: white;
+    color: #ffffff;
     background: linear-gradient(#ff8f70, #ff3d54);
     padding: 1rem 3rem;
     margin-top: 2rem;
     border: none; }
     .btn--tertiary:hover {
       background-color: #ff7a85;
-      color: white;
+      color: #ffffff;
       border: none; }
     @media only screen and (min-width: 48em) {
       .btn--tertiary {
         margin-top: 0;
-        background: white;
+        background: #ffffff;
         color: #ff3d54; } }
 
 @media only screen and (min-width: 48em) {
@@ -126,22 +126,11 @@ body {
     display: flex; } }
 
 .menu__collapse {
-  display: block;
   text-align: center;
   margin: 1rem; }
   @media only screen and (min-width: 48em) {
     .menu__collapse {
       margin: 0; } }
-  .menu__collapse input {
-    position: absolute;
-    left: -100rem; }
-  .menu__collapse input:checked ~ .menu__list {
-    display: block;
-    height: auto;
-    padding: 1rem;
-    margin: 1rem auto; }
-  .menu__collapse input:checked ~ .menu__title span {
-    transform: rotate(180deg); }
 
 .menu__title {
   display: flex;
@@ -149,14 +138,16 @@ body {
   justify-content: center; }
   @media only screen and (min-width: 48em) {
     .menu__title {
-      color: white;
+      color: #ffffff;
       padding: 0 1.5rem; } }
   .menu__title--link {
     text-decoration: none;
-    color: #1f3f5b; }
+    color: #1f3f5b;
+    display: flex;
+    align-items: center; }
     @media only screen and (min-width: 48em) {
       .menu__title--link {
-        color: white; } }
+        color: #ffffff; } }
     .menu__title--link:hover {
       text-decoration: underline; }
 
@@ -166,8 +157,6 @@ body {
 .menu__list {
   display: none;
   position: relative;
-  height: 0;
-  width: 17rem;
   background: #ebebeb;
   font-size: 1.5rem;
   border-radius: 5px; }
@@ -175,9 +164,8 @@ body {
     .menu__list {
       display: none;
       position: absolute;
-      height: 0;
       width: 13rem;
-      background: white;
+      background: #ffffff;
       font-size: 1.2rem;
       padding: 1rem;
       border-radius: 5px; } }
@@ -212,7 +200,7 @@ body {
     padding: 0 4rem; }
     @media only screen and (min-width: 48em) {
       .menu__cta--link {
-        color: white;
+        color: #ffffff;
         padding: 0 2rem; } }
 
 .icon--white {
@@ -226,6 +214,12 @@ body {
   @media only screen and (min-width: 48em) {
     .icon--dark {
       display: none; } }
+
+.js-menu-dropdown:hover .menu__list {
+  display: block; }
+
+.js-menu-dropdown:hover .menu__icons img {
+  transform: rotate(180deg); }
 
 .footer {
   background: #25252d;
@@ -249,7 +243,7 @@ body {
     .footer__content {
       display: flex; } }
   .footer__content__title {
-    color: white;
+    color: #ffffff;
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 2rem; }
@@ -299,7 +293,7 @@ body {
       .header__nav--icon {
         display: none; } }
     .header__nav__main {
-      background: white;
+      background: #ffffff;
       position: absolute;
       top: 3%;
       left: 5%;
